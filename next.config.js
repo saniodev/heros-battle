@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+module.exports = {
+  env: {
+    BASE_URL: 'http://homologacao3.azapfy.com.br/api/ps/metahumans',
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net'
+      }
+    ],
+  },
+}
